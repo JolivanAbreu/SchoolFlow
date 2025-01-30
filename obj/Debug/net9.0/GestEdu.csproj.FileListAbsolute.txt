@@ -1,0 +1,14 @@
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\bin\Debug\net9.0\GestEdu.exe
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\bin\Debug\net9.0\GestEdu.deps.json
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\bin\Debug\net9.0\GestEdu.runtimeconfig.json
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\bin\Debug\net9.0\GestEdu.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\bin\Debug\net9.0\GestEdu.pdb
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.AssemblyInfoInputs.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.AssemblyInfo.cs
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.csproj.CoreCompileInputs.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\refint\GestEdu.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.pdb
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.genruntimeconfig.cache
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\ref\GestEdu.dll

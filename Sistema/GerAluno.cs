@@ -93,7 +93,7 @@ class Alunos()
         }
         else
         {
-            Console.WriteLine("Lista de Alunos");
+            Console.WriteLine("\n===== Lista de Alunos ======");
             foreach (var aluno in listaAlunos)
             {
                 Console.WriteLine($"\n Matricula: {aluno.Matricula} \n Nome: {aluno.Nome} \n Nota 1: {aluno.Idade} \n Nota 1: {aluno.Nota1} \n Nota 2: {aluno.Nota2} \n Nota 3: {aluno.Nota3}");
@@ -110,12 +110,15 @@ class Alunos()
             Console.WriteLine("\n❌ Nenhum aluno cadastrado para remover.");
         }
 
-        Console.Write("Digite a matricula do aluno: ");
+        Console.Write("\n===== Exclução de Alunos =====");
+
+        Console.Write("\nDigite a matricula do aluno: ");
         int matricula;
 
         while (!int.TryParse(Console.ReadLine(), out matricula))
         {
-            Console.Write("Número de inválido! Digite uma matrícula válida: ");
+            Console.Write("\nNúmero de inválido!");
+            Console.Write("\n Informe uma matrícula valida: ");
         }
 
         Aluno aluno = listaAlunos.Find(a => a.Matricula == matricula);
@@ -132,7 +135,85 @@ class Alunos()
 
     private static void EditarAluno()
     {
+        if (listaAlunos.Count == 0)
+        {
+            Console.WriteLine("\n❌ Nenhum aluno cadastrado para editar.");
+            return;
+        }
 
+        Console.Write("\n===== Edição de Alunos ======");
+        Console.Write("\nDigite a matricula do aluno: ");
+        int matricula;
+
+        while (!int.TryParse(Console.ReadLine(), out matricula))
+        {
+            Console.Write("\nNúmero de inválido!");
+            Console.Write("\n Informe uma matrícula valida: ");
+        }
+
+        Aluno aluno = listaAlunos.Find(a => a.Matricula == matricula);
+
+        if (aluno == null)
+        {
+            Console.WriteLine("\n❌ Matrícula não encontrada.");
+            return;
+        }
+
+        Console.Write($"\n Aluno encontrado: {aluno.Nome}");
+        Console.WriteLine("\n 1. Informações do Aluno");
+        Console.WriteLine("2. Notas do Aluno");
+        Console.Write("\n O que deseja alterar: ");
+        int edit = int.Parse(Console.ReadLine());
+
+        switch (edit)
+        {
+            case 1:
+                Console.WriteLine("\n Informações");
+                Console.Write("1. Nome");
+                Console.Write("\n 2. Idade");
+                Console.Write("\n Escolha uma opção: ");
+                int opcaoInfo = int.Parse(Console.ReadLine());
+
+                if (opcaoInfo == 1)
+                {
+                    Console.WriteLine("Informe o novo nome: ");
+                    string novoNome = Console.ReadLine();
+
+                    aluno.Nome = novoNome;
+                    Console.WriteLine("\n✅ Alterado com sucesso!");
+                }
+                else if (opcaoInfo == 2)
+                {
+                    Console.WriteLine("Informe a nova idade: ");
+                    int novaIdade = int.Parse(Console.ReadLine());
+                    aluno.Idade = novaIdade;
+                    Console.WriteLine("\n✅ Alterado com sucesso!");
+                }
+                break;
+
+            case 2:
+                Console.WriteLine("\n Notas");
+                Console.Write("1. Nota 1");
+                Console.Write("\n 2. Nota 2");
+                Console.Write("\n 3. Nota 3");
+                Console.Write("\n Escolha uma opção: ");
+                int opcaoNota = int.Parse(Console.ReadLine());
+
+                if (opcaoNota == 1)
+                {
+                    Console.WriteLine("Informe a nova nota 1: ");
+                    double novaNota1 = double.Parse(Console.ReadLine());
+                    aluno.Nota1 = novaNota1;
+                    Console.WriteLine("\n✅ Alterado com sucesso!");
+                }
+                else if (opcaoNota == 2)
+                {
+                    Console.WriteLine("Informe a nova nota 2: ");
+                    double novaNota2 = double.Parse(Console.ReadLine());
+                    aluno.Nota2 = novaNota2;
+                    Console.WriteLine("\n✅ Alterado com sucesso!");
+                }
+                break;
+        }
     }
-
 }

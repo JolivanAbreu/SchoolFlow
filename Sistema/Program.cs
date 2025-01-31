@@ -30,13 +30,13 @@ class GSE
                 5 => () =>
                 {
                     Console.WriteLine("\n Saindo...");
-                    Environment.Exit(0); // Sai do programa imediatamente
+                    Environment.Exit(0); 
                 }
                 ,
                 _ => () => Console.WriteLine("Opção inválida!")
             };
 
-            acao(); // Executa a ação correspondente
+            acao();
         }
     }
 

@@ -12,3 +12,4 @@ C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projeto
 C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.pdb
 C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.genruntimeconfig.cache
 C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\ref\GestEdu.dll
+C:\Users\jolivanat\Documents\03° Minhas informações\03° VS Code\01° Projetos Pessoais\.NET\GestEdu\obj\Debug\net9.0\GestEdu.sourcelink.json

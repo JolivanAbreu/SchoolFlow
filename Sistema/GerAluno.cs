@@ -22,32 +22,22 @@ class Alunos()
                 continue;
             }
 
-            if (OptionAl == 1)
+            Action acao = OptionAl switch
             {
-                CadastrarAluno();
-            }
-            else if (OptionAl == 2)
-            {
-                ListarAlunos();
-            }
-            else if (OptionAl == 3)
-            {
-                EditarAluno();
-            }
-            else if (OptionAl == 4)
-            {
-                RemoverAluno();
-            }
-            else if (OptionAl == 5)
-            {
-                Console.WriteLine("\nVoltando ao menu principal...");
-                break;
-            }
-            else if (OptionAl == 6)
-            {
-                Console.WriteLine("\nSaindo do sistema...");
-                Environment.Exit(0);
-            }
+                1 => CadastrarAluno,
+                2 => ListarAlunos,
+                3 => EditarAluno,
+                4 => RemoverAluno,
+                5 => () =>
+                {
+                    Console.WriteLine("\nVoltando ao menu principal...");
+                    Environment.Exit(0); // Sai do programa
+                }
+                ,
+                _ => () => Console.WriteLine("Opção inválida. Tente novamente.")
+            };
+
+            acao();
         }
 
     }
@@ -169,7 +159,7 @@ class Alunos()
         {
             case 1:
                 Console.WriteLine("\n Informações");
-                Console.Write("1. Nome");
+                Console.Write("\n 1. Nome");
                 Console.Write("\n 2. Idade");
                 Console.Write("\n Escolha uma opção: ");
                 int opcaoInfo = int.Parse(Console.ReadLine());
@@ -193,7 +183,7 @@ class Alunos()
 
             case 2:
                 Console.WriteLine("\n Notas");
-                Console.Write("1. Nota 1");
+                Console.Write("\n 1. Nota 1");
                 Console.Write("\n 2. Nota 2");
                 Console.Write("\n 3. Nota 3");
                 Console.Write("\n Escolha uma opção: ");

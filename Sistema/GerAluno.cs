@@ -102,12 +102,12 @@ class Alunos()
 
         Console.Write("\n===== Exclução de Alunos =====");
 
-        Console.Write("\nDigite a matricula do aluno: ");
+        Console.Write("\n Digite a matricula do aluno: ");
         int matricula;
 
         while (!int.TryParse(Console.ReadLine(), out matricula))
         {
-            Console.Write("\nNúmero de inválido!");
+            Console.Write("\n Número de inválido!");
             Console.Write("\n Informe uma matrícula valida: ");
         }
 
@@ -132,12 +132,12 @@ class Alunos()
         }
 
         Console.Write("\n===== Edição de Alunos ======");
-        Console.Write("\nDigite a matricula do aluno: ");
+        Console.Write("\n Digite a matricula do aluno: ");
         int matricula;
 
         while (!int.TryParse(Console.ReadLine(), out matricula))
         {
-            Console.Write("\nNúmero de inválido!");
+            Console.Write("\n Número de inválido!");
             Console.Write("\n Informe uma matrícula valida: ");
         }
 
@@ -151,7 +151,7 @@ class Alunos()
 
         Console.Write($"\n Aluno encontrado: {aluno.Nome}");
         Console.WriteLine("\n 1. Informações do Aluno");
-        Console.WriteLine("2. Notas do Aluno");
+        Console.WriteLine("\n 2. Notas do Aluno");
         Console.Write("\n O que deseja alterar: ");
         int edit = int.Parse(Console.ReadLine());
 
@@ -166,7 +166,7 @@ class Alunos()
 
                 if (opcaoInfo == 1)
                 {
-                    Console.WriteLine("Informe o novo nome: ");
+                    Console.WriteLine("\n Informe o novo nome: ");
                     string novoNome = Console.ReadLine();
 
                     aluno.Nome = novoNome;
@@ -174,7 +174,7 @@ class Alunos()
                 }
                 else if (opcaoInfo == 2)
                 {
-                    Console.WriteLine("Informe a nova idade: ");
+                    Console.WriteLine("\n Informe a nova idade: ");
                     int novaIdade = int.Parse(Console.ReadLine());
                     aluno.Idade = novaIdade;
                     Console.WriteLine("\n✅ Alterado com sucesso!");
